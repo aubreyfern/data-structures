@@ -1,0 +1,35 @@
+READ ME
+Aubrey Fernando
+2271086
+ferna190@mail.chapman.edu
+
+Assignment 4
+Files Included:
+- main.cpp
+- fileCheck.h fileCheck.cpp
+- list.h (interface)
+- dll.h
+- ListQueue.h
+- Student.h Student.cpp
+- Simulation.h Simulation.cpp
+
+-testFile.txt testFile2.txt
+
+
+About:
+Main first checks whether a file was entered into the command line, if not fileCheck prompted to 
+request a file. fileCheck also ensures that the files opens and exists. 
+The file name is sent to the Simulation where the file is read in, and uses a switch statement
+depending on whether it's reading in a time/clock tick or info related to the students. Students withthe time they need and they arrived are added to the queue. 
+The simulation begins and students are only dequeued if there are empty windows available, if the queue has elements, and they have already arrived. Time students needed at the window is added to the 
+windowsOpen[] and wait times are added to the waitTime[]. Per clock tick if there is someone per window their time there is decremented, and if no one is at the window the idleTime[] is incremented.
+The loop only stops when all the students have been dequeued and they have spent they time they need at the window, leaving all the windows empty.
+Calcualations are made to print out statistics at the end by going through waitTime[] to get stats on students wait times, and idleTime[] to get data on window idle time. 
+
+Sources:
+Abby Tan
+Data structures and algorithms in C++ Book by Michael T. Goodrich
+https://linuxconfig.org/example-of-c-class-template-array-to-instantiate-an-array-of-any-element-type
+https://stackoverflow.com/questions/13464243/why-a-warning-of-control-reaches-end-of-non-void-function-for-the-main-functio?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+http://www.cplusplus.com/reference/algorithm/sort/
+
