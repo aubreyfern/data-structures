@@ -1,0 +1,38 @@
+READ ME
+Aubrey Fernando
+2271086
+ferna190@mail.chapman.edu
+
+Files Submitted:
+aubreyfernando_assignment3.tgz/
+-checkDelimiters.cpp checkDelimiters.h
+-checkFile.cpp checkFile.h
+-GenStack.h
+-main.cpp
+
+tesfiles:
+-delimtiers.txt
+-testfile.cpp
+
+
+About:
+CheckFile checks if the file the user entered exists.
+If the user doesn't enter in a file they are prompted to enter a file
+which is also checked the file exists. The user is prompted to enter in a file
+until they enter one that exists
+
+CheckDelimiters reads in the file name from main and uses the amount of lines for the 
+size of the stack. The file is opened again read line by line, if chars in the line equal any of 
+opening delimiters it is added to the stack. If closing delimiters are found it is 
+1. checked that the stack is empty, if it is this means a opening delimiter is missing
+2. if the stack is not empty .peek() is called, if closing delimiter matches .peek opening 
+.pop is called
+3. if the stack is not empty and .peek is not the openign delimiters, it is missing an opening delimiter
+problems and reported back with expected/missing delimiters and what was found instead on what line. 
+After the file is closed, the stack is checked whether it is empty. 
+If it's not empty theres a missing closing delimiter.
+
+References:
+https://cs.stanford.edu/people/eroberts/courses/cs106b/handouts/22-DynamicAllocation.pdf
+Data Structures and Algorithms in C++ 2nd Edition
+Kathleen Gendotti
