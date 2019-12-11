@@ -1,0 +1,3 @@
+1000|Aubrey Fernando|Prof|Science|2|5000, 4000
+1002|Abby Tan|Professor|Computer Science|3|3000, 3300, 3404
+1004|Ellie Mae|TA|Art|1|4400
