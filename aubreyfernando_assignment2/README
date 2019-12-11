@@ -1,0 +1,38 @@
+READ ME 
+
+Aubrey Fernando
+2271086
+ferna190@mail.chapman.edu
+
+Files:
+-main.cpp 
+-Input.cpp -Input.h
+-Game.cpp -Game.h 
+-CellMap1.txt
+-CellMap2.txt
+-GenFile.out
+-Makefile
+
+About:
+Input.cpp prompts user to enter in a file or generate a cell map.
+If they want to enter a file they are prompted for the name of file and the file is read in first 
+get dimensions of the array, the array is then made using MakeMap() and then the file is read in again 
+to read in the contents of the array and store it in the array made. 
+If the user wants to generate a map they are asked to enter in the dimensions for rows
+and columns. Correct Input() is used if the entry is not an int and the user is prompted to enter
+in a number again. CorrectDensity() does the same thing.
+
+Game.cpp prompts the user whether to print results to a file or 
+to the console with the option of pausing between generations or 
+outputting all generations at the same time. There is one GameSimulation() method
+which has switch statements according to the mode and print type. 
+
+
+References:
+Abby Tan
+http://www.cplusplus.com/reference/cstdlib/atoi/
+https://stackoverflow.com/questions/15672805/c-swapping-pointers
+http://www.cplusplus.com/forum/beginner/6463/
+
+
+
